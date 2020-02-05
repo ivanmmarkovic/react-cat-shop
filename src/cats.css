@@ -1,0 +1,11 @@
+
+.cats-all {
+  margin: 40px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+}

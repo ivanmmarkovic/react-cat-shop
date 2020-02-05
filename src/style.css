@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  font-family: Lato;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+}
+
+nav > span {
+  cursor: pointer;
+  color: #fff;
+  margin: 0 15px;
+}
+
+
+
+  .rotateBasket {
+    animation-name: rotateBasket;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes rotateBasket {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(45deg);
+    }
+    40% {
+      transform: rotate(-45deg);
+    }
+    60% {
+      transform: rotate(45deg);
+    }
+    80% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
